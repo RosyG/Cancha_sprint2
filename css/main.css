@@ -1,0 +1,80 @@
+body{
+  /* IDEA: Orden: etiqutas, id(uso de guión bajo), clases (uso de guión medio)  */ */
+  background-color: lightgrey;
+}
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+section {/*los atributos se ordenan de manera alfabetica*/
+/*cancha completa pasto*/
+  background-color: #8CB27C;
+  height:250px;
+  position: relative;
+  width: 500px;
+  left: 30%;
+}
+#circle {
+  /* IDEA: centro de la cancha */
+  border-radius: 50%;
+  height: 80px;
+  left: 40%;
+  position: absolute;
+  top:25%;
+  width: 80px;
+}
+#first_balon {
+  float: right; /*Es hijo de la cancha der, por eso se posiciona a la der*/
+  margin-top: 3%;
+}
+
+#left_goal {
+  border-left: none;
+}
+#right_goal {
+  border-right: none;
+  left: 89%;
+}
+
+#third_balon {
+  left: 87%;
+  position: absolute;
+  top: 70%;
+}
+#second_balon {
+  left: 48%;
+  position: absolute;
+  top: 20%;
+}
+
+
+#principal {
+  /*borde de la cancha*/
+  /*margin-top: 25px; margin no funciona cuando hay posiciones, no es considerado*/
+  border: 1px solid #fff;
+  height: 200px;
+  left:25px;
+  position: absolute;
+  top:25px;
+  width: 450px;
+}
+
+.balon {
+  background-color: white;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+
+}
+
+.goal {
+  height:100px;
+  position: absolute;
+  top:25%;
+  width: 50px;
+}
+
+.white-border {
+  border: 1px solid white;
+}
